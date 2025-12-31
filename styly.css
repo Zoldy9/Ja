@@ -1,0 +1,345 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	background: #f2f2f2;
+	color: #222;
+	
+}
+
+
+#obal {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 20px;
+	
+}
+
+
+header {
+	background:#f7f7ff;
+	border: 1px solid #ddd;
+	border-radius: 20px;
+	padding: 20px;
+	margin-bottom: 16px;
+	
+}
+
+header h1 {
+	margin:0;
+	font-size:60px;
+}
+
+header p {
+	margin: 10px 0 0;
+	color:#555
+	
+}
+
+nav {
+	background: #111;
+	border-radius: 20px;
+	margin-bottom: 12px;
+}
+
+nav ul {
+	list-style:none;
+	margin: 0;
+	padding:0;
+	display: flex;
+	
+}
+
+nav li {
+	flex:1;
+}
+
+nav a {
+	display:block;	
+	text-align: center;
+	padding: 12px 10px;
+	color: white;
+	text-decoration: none;
+	border-right: 1px solid #333;
+}
+
+nav li:last-child a {
+	border-right: none;
+}
+
+nav a:hover {
+	background: #2a2a2a;
+}
+
+
+
+
+#reklama{
+	background: #f7f7ff;
+	border: 1px solid #ddd;
+	border-radius: 20px;
+	padding: 16px;
+	margin-bottom: 12px;
+}
+
+section,aside,footer{
+	background: #f7f7ff;
+	border: 1px solid #ddd;
+	border-radius:10px;
+	padding:14px;
+}
+
+#obal{
+	display:flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+
+header, nav,#reklama{
+	margin-bottom: 0px;
+}
+footer {
+	text-align: center;
+}
+footer a{
+	text-decoration: none;
+}
+
+footer a:hover{
+	text-decoration:underline;
+}
+
+
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+
+th,td{
+	border:1px solid #ddd;
+	padding: 10px;
+	text-align: center;
+}
+
+th {
+	background: #f7f7f7;      
+}
+td{
+	background: white;
+}
+
+
+
+.poznamka{
+	margin-top: 0;
+	font-size:14px;
+	opacity: 0.9;
+}
+
+
+.ikona{
+	width:24px;
+	height:auto;
+	vertical-align:middle;
+}
+
+.podsekcia{
+	background: #f7f7ff;
+	border: 1px solid #ddd;
+	border-radius:20px;
+	padding: 12px 14px;
+	margin: 12px 0;
+}
+
+
+.podsekcia h3{
+	margin-top:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mriezka {
+	display: grid;                      
+	grid-template-columns: repeat(5, 1fr); 
+	gap: 10px;                          
+	margin-top: 12px;   
+
+}	
+
+.mriezka a {
+	display: block;                     
+	border-radius: 10px;                
+	overflow: hidden;                   
+	border: 1px solid #ddd;             
+}
+
+.mriezka img {
+	width: 100%;                        
+	aspect-ratio: 1 / 1;               
+	object-fit: cover;                  
+	display: block;                     
+}
+
+
+.mriezka a:hover {
+	border: 4px solid #999;
+	border-color: #999;                
+}
+
+
+
+.lightbox {
+	display: none;                      
+	position: fixed;                    
+	inset: 0;                           
+	background: rgba(0, 0, 0, 0.85);     
+	padding: 30px;                      
+	z-index: 1000;                      
+	align-items: center;                
+	justify-content: center;            
+}
+
+
+.lightbox:target {
+	display: flex;                      
+}
+
+.lightbox img {
+	max-width: 90vw;                     
+	max-height: 90vh;                   
+	border-radius: 12px;                
+	border: 1px solid #444;             
+}
+
+
+.zatvor {
+	position: absolute;                 
+	top: 15px;
+	right: 20px;
+	font-size: 40px;
+	color: white;
+	text-decoration: none;              
+	line-height: 1;
+}
+
+.zatvor:hover {
+	color: #ffd24d;                     
+}
+
+
+
+#flex{
+	display:flex;
+	gap:12px;
+}
+
+
+#flex section{
+	flex: 3;
+}
+
+#flex aside{
+	flex: 1;
+	align-self: flex-start;
+}
+
+
+
+#kontakt{
+	margin-top: 16px;
+	padding: 14px;
+	border: 1px solid #ddd;
+	border-radius: 14px;
+	background: #f7f7ff;
+}
+
+#kontakt h2{
+	margin-top: 0;
+}
+
+#kontakt .riadok{
+	margin: 10px 0;
+}
+
+#kontakt label{
+	display: block;
+	margin-bottom: 4px;
+}
+
+#kontakt input[type="text"],
+#kontakt input[type="email"],
+#kontakt select,
+#kontakt textarea{
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-sizing: border-box;
+	}
+
+#kontakt .checkbox{
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+#kontakt .checkbox label{
+	margin: 0;
+    display: inline;
+}
+
+#kontakt .tlacidla{
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+
+@media (max-width:800px){
+	#obal{
+		padding:12px;
+	}
+	
+	header h1{
+		
+		font-size:42px;
+	}
+	
+	nav u1{
+		flex-direction: column;
+	}
+	
+	nav a {
+		border-right:none;
+		border-bottom: 1px solid #333
+	}
+	
+	nav li:last-child a{
+		border-bottom: none;
+	}
+	
+	#flex{
+		flex-direction: column;
+	}
+	
+	.mriezka{
+		grid-template-columns: repeat(2,1fr);
+	}
+	
+}
